@@ -1,0 +1,49 @@
+<odoo>
+
+
+    <record id="gala_gym_set_tree_view" model="ir.ui.view">
+        <field name="name">view.gala_gym.set.tree</field>
+        <field name="model">gala_gym.set</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!--<field name="exercice_id"/>-->
+                <field name="index"/>
+                <field name="reps"/>
+                <field name="weight"/>
+                <field name="time"/>
+            </tree>
+
+        </field>
+    </record>
+
+    <record id="gala_gym_set_form_view" model="ir.ui.view">
+        <field name="name">view.gala_gym.set.form</field>
+        <field name="model">gala_gym.set</field>
+        <field name="arch" type="xml">
+            <form string="sets">
+                <group>
+                    <field name="exercice_id" readonly="1"/>
+                    <field name="index"/>
+                    <field name="reps"/>
+                    <field name="weight"/>
+                    <field name="time"/>
+                </group>
+            </form>
+
+        </field>
+    </record>
+
+    <record id="action_gala_gym_set" model="ir.actions.act_window">
+        <field name="name">set</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">gala_gym.set</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!--<menuitem id="menu_gala_gym_set"
+              name="sets"
+              sequence="10"
+              parent="menu_gala_gym_root"
+              action="action_gala_gym_set"
+    />-->
+</odoo>
