@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+gym.access_gym_category,access_gym_category,gym.model_gym_category,,1,1,1,1
+gym.access_gym_exercice,access_gym_exercice,gym.model_gym_exercice,base.group_user,1,1,1,1
+gym.access_gym_exercice_class,access_gym_exercice_class,gym.model_gym_exercice_class,base.group_user,1,1,1,1
+gym.access_gym_session,access_gym_session,gym.model_gym_session,base.group_user,1,1,1,1
+gym.access_gym_set,access_gym_set,gym.model_gym_set,base.group_user,1,1,1,1
+gym.access_gym_workout,access_gym_workout,gym.model_gym_workout,base.group_user,1,1,1,1

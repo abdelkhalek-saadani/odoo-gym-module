@@ -1,9 +1,9 @@
 <odoo>
 
 
-    <record id="gala_gym_exercice_class_tree_view" model="ir.ui.view">
-        <field name="name">view.gala_gym.exercice_class.tree</field>
-        <field name="model">gala_gym.exercice_class</field>
+    <record id="gym_exercice_class_tree_view" model="ir.ui.view">
+        <field name="name">view.gym.exercice_class.tree</field>
+        <field name="model">gym.exercice_class</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
@@ -14,9 +14,9 @@
         </field>
     </record>
 
-    <record id="gala_gym_exercice_class_form_view" model="ir.ui.view">
-        <field name="name">view.gala_gym.exercice_class.form</field>
-        <field name="model">gala_gym.exercice_class</field>
+    <record id="gym_exercice_class_form_view" model="ir.ui.view">
+        <field name="name">view.gym.exercice_class.form</field>
+        <field name="model">gym.exercice_class</field>
         <field name="arch" type="xml">
             <form string="exercice_classs">
                 <group>
@@ -29,17 +29,17 @@
         </field>
     </record>
 
-    <record id="action_gala_gym_exercice_class" model="ir.actions.act_window">
+    <record id="action_gym_exercice_class" model="ir.actions.act_window">
         <field name="name">exercice_class</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">gala_gym.exercice_class</field>
+        <field name="res_model">gym.exercice_class</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_gala_gym_exercice_class"
+    <menuitem id="menu_gym_exercice_class"
               name="exercice_classs"
               sequence="40"
-              parent="menu_gala_gym_root"
-              action="action_gala_gym_exercice_class"
+              parent="menu_gym_root"
+              action="action_gym_exercice_class"
     />
 </odoo>

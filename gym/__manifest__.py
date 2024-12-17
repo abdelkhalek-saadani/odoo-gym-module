@@ -1,6 +1,6 @@
 {
-    "name": "gala Gym",
-    "author": "Abdelkhalek",
+    "name": "Gym",
+    "author": "Abdelkhalek Saadani",
     "summary": "Progress Gym Tracker",
     "depends": [],
     "data": [

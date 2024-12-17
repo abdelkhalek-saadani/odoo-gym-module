@@ -1,9 +1,9 @@
 <odoo>
 
 
-    <record id="gala_gym_session_tree_view" model="ir.ui.view">
-        <field name="name">view.gala_gym.session.tree</field>
-        <field name="model">gala_gym.session</field>
+    <record id="gym_session_tree_view" model="ir.ui.view">
+        <field name="name">view.gym.session.tree</field>
+        <field name="model">gym.session</field>
         <field name="priority">10</field>
         <field name="arch" type="xml">
             <tree>
@@ -18,9 +18,9 @@
         </field>
     </record>
 
-    <record id="gala_gym_session_tree_view_related" model="ir.ui.view">
-        <field name="name">view.gala_gym.session.tree.related</field>
-        <field name="model">gala_gym.session</field>
+    <record id="gym_session_tree_view_related" model="ir.ui.view">
+        <field name="name">view.gym.session.tree.related</field>
+        <field name="model">gym.session</field>
         <field name="priority">1</field>
         <field name="arch" type="xml">
             <tree>
@@ -34,9 +34,9 @@
         </field>
     </record>
 
-    <record id="gala_gym_session_form_view" model="ir.ui.view">
-        <field name="name">view.gala_gym.session.form</field>
-        <field name="model">gala_gym.session</field>
+    <record id="gym_session_form_view" model="ir.ui.view">
+        <field name="name">view.gym.session.form</field>
+        <field name="model">gym.session</field>
         <field name="arch" type="xml">
             <form string="sessions">
                 <group>
@@ -52,19 +52,19 @@
         </field>
     </record>
 
-    <record id="action_gala_gym_session" model="ir.actions.act_window">
+    <record id="action_gym_session" model="ir.actions.act_window">
         <field name="name">session</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">gala_gym.session</field>
+        <field name="res_model">gym.session</field>
         <field name="view_mode">tree,form</field>
-        <field name="view_id" ref="gala_gym_session_tree_view"/>
-        <!--<field name="views">[('gala_gym_session_tree_view_related','tree')]</field>-->
+        <field name="view_id" ref="gym_session_tree_view"/>
+        <!--<field name="views">[('gym_session_tree_view_related','tree')]</field>-->
     </record>
 
-    <menuitem id="menu_gala_gym_session"
+    <menuitem id="menu_gym_session"
               name="sessions"
               sequence="20"
-              parent="menu_gala_gym_root"
-              action="action_gala_gym_session"
+              parent="menu_gym_root"
+              action="action_gym_session"
     />
 </odoo>

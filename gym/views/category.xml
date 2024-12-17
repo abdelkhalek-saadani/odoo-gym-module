@@ -1,9 +1,9 @@
 <odoo>
 
 
-    <record id="gala_gym_category_tree_view" model="ir.ui.view">
-        <field name="name">view.gala_gym.category.tree</field>
-        <field name="model">gala_gym.category</field>
+    <record id="gym_category_tree_view" model="ir.ui.view">
+        <field name="name">view.gym.category.tree</field>
+        <field name="model">gym.category</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
@@ -14,9 +14,9 @@
         </field>
     </record>
 
-    <record id="gala_gym_category_form_view" model="ir.ui.view">
-        <field name="name">view.gala_gym.category.form</field>
-        <field name="model">gala_gym.category</field>
+    <record id="gym_category_form_view" model="ir.ui.view">
+        <field name="name">view.gym.category.form</field>
+        <field name="model">gym.category</field>
         <field name="arch" type="xml">
             <form string="categories">
                 <group>
@@ -29,17 +29,17 @@
         </field>
     </record>
 
-    <record id="action_gala_gym_category" model="ir.actions.act_window">
+    <record id="action_gym_category" model="ir.actions.act_window">
         <field name="name">category</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="res_model">gala_gym.category</field>
+        <field name="res_model">gym.category</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_gala_gym_category"
+    <menuitem id="menu_gym_category"
               name="categories"
               sequence="30"
-              parent="menu_gala_gym_root"
-              action="action_gala_gym_category"
+              parent="menu_gym_root"
+              action="action_gym_category"
     />
 </odoo>

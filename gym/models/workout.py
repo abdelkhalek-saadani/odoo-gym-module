@@ -5,10 +5,10 @@ from odoo.exceptions import ValidationError
 
 
 class Workout(models.Model):
-    _name = "gala_gym.workout"
+    _name = "gym.workout"
 
     name = fields.Char("Workout Name", default="Workout el Abtal")
-    session_ids = fields.One2many("gala_gym.session","workout_id",
+    session_ids = fields.One2many("gym.session","workout_id",
                                   "Sessions")
     start_date = fields.Date("Start Date", default=datetime.now())
     end_date = fields.Date("End Date")

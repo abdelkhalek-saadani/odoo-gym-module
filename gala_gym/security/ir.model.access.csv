@@ -1,7 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-gala_gym.access_gala_gym_category,access_gala_gym_category,gala_gym.model_gala_gym_category,,1,1,1,1
-gala_gym.access_gala_gym_exercice,access_gala_gym_exercice,gala_gym.model_gala_gym_exercice,base.group_user,1,1,1,1
-gala_gym.access_gala_gym_exercice_class,access_gala_gym_exercice_class,gala_gym.model_gala_gym_exercice_class,base.group_user,1,1,1,1
-gala_gym.access_gala_gym_session,access_gala_gym_session,gala_gym.model_gala_gym_session,base.group_user,1,1,1,1
-gala_gym.access_gala_gym_set,access_gala_gym_set,gala_gym.model_gala_gym_set,base.group_user,1,1,1,1
-gala_gym.access_gala_gym_workout,access_gala_gym_workout,gala_gym.model_gala_gym_workout,base.group_user,1,1,1,1

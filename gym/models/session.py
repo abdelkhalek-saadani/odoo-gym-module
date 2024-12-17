@@ -5,12 +5,12 @@ from datetime import datetime
 
 
 class Session(models.Model):
-    _name = "gala_gym.session"
+    _name = "gym.session"
 
     name = fields.Char("Session Name", default="Session of the free will man")
-    workout_id = fields.Many2one("gala_gym.workout",
+    workout_id = fields.Many2one("gym.workout",
                                  "Workout")
-    exercice_ids = fields.One2many("gala_gym.exercice","session_id",
+    exercice_ids = fields.One2many("gym.exercice","session_id",
                                    "Exercices")
     date = fields.Date("Date", default=datetime.now())
     duration = fields.Integer("Duration in minutes")

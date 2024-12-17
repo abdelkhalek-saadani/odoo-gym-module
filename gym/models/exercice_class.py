@@ -1,10 +1,10 @@
 from odoo import models, fields
 
 class ExerciceClass(models.Model):
-    _name = "gala_gym.exercice_class"
+    _name = "gym.exercice_class"
 
     name = fields.Char("Exercice Name")
-    category_ids = fields.Many2many("gala_gym.category",
+    category_ids = fields.Many2many("gym.category",
                                 "exercice_category",
                                 "exercice_id",
                                 "category_id")
